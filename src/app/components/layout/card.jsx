@@ -2,9 +2,9 @@ import React from 'react'
 import Link from 'next/link';
 
 
-const Card = ({key, title, date, name}) => {
+const Card = ({id, title, date, name}) => {
   return (
-    <Link href={`/blog/${key}`} className="w-full max-w-sm bg-white rounded-lg shadow-md hover:scale-105 transition-all">
+    <Link href={`/blog/${id}`} className="w-full max-w-sm bg-white rounded-lg shadow-md hover:scale-105 transition-all">
       {/* <img src="/placeholder.svg" alt="Card Image" className="w-full rounded-t-lg" /> */}
       <div className="p-6 min-h-[200px] max-h-[240px]">
         <div className="items-center mb-4">
